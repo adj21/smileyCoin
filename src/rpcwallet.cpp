@@ -842,7 +842,7 @@ Value getnegbalance(const Array& params, bool fHelp)
                 nBalance -= r.second;
             nBalance -= allFee;
         }
-        return  ValueFromAmount(nBalance);
+        return  ValueFromAmount(-nBalance);
     }
 
     string strAccount = AccountFromValue(params[0]);
